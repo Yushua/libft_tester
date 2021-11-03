@@ -6,11 +6,11 @@
 #    By: ybakker <ybakker@student.codam.nl>           +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/07/28 16:04:32 by ybakker       #+#    #+#                  #
-#    Updated: 2021/11/03 01:46:59 by ybakker       ########   odam.nl          #
+#    Updated: 2021/11/03 02:00:40 by ybakker       ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Karen
+NAME = libft
 
 SRC = main.c\
 		ft_strlen.c
