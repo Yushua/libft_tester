@@ -6,7 +6,7 @@
 /*   By: ybakker <ybakker@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/03 01:34:55 by ybakker       #+#    #+#                 */
-/*   Updated: 2021/11/07 20:50:47 by ybakker       ########   odam.nl         */
+/*   Updated: 2021/11/07 20:55:15 by ybakker       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,27 @@ void    ft_strlen_tester(void)
     printf("len == [%zu] ftlen == [%zu]\n\n", i, y);
 }
 
+void    ft_test_1(void)
+{
+    printf("---- f_strlen tester ----\n\n");
+
+    printf("len == [%zu] ftlen == [%zu]\n\n", i, y);
+}
+
+void    ft_test_2(void)
+{
+    printf("---- f_strlen tester ----\n\n");
+
+    printf("len == [%zu] ftlen == [%zu]\n\n", i, y);
+}
+
+void    ft_test_3(void)
+{
+    printf("---- f_strlen tester ----\n\n");
+
+    printf("len == [%zu] ftlen == [%zu]\n\n", i, y);
+}
+
 int     ft_while_loop(int argc, char **argv)
 {
     int i = 1;
@@ -33,6 +54,12 @@ int     ft_while_loop(int argc, char **argv)
     {
         if (!strcmp(argv[i], "ft_strlen"))
             ft_strlen_tester();
+        else if (!strcmp(argv[i], "ft_strlen"))
+            ft_test_1();
+        else if (!strcmp(argv[i], "ft_strlen"))
+            ft_test_2();
+        else if (!strcmp(argv[i], "ft_strlen"))
+            ft_test_3();
         else
             printf("argument invalid [%s] i == [%i]\n", argv[i], strcmp(argv[i], "ft_strlen"));
         i++;
@@ -63,5 +90,11 @@ int     main(int argc, char **argv)
     //use this to check for one case or for all cases
     if (i == 1 || strcmp(argv[1], "ft_strlen"))
         ft_strlen_tester();
+    else if (i == 1 || strcmp(argv[1], "ft_strlen"))
+        ft_test_1();
+    else if (i == 1 || strcmp(argv[1], "ft_strlen"))
+        ft_test_2();
+    else if (i == 1 || strcmp(argv[1], "ft_strlen"))
+        ft_test_3();
     return (0);
 }
