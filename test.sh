@@ -1,4 +1,9 @@
 rm -r libft
+echo "---------hello---------"
 make
-./libft ft_strlen ft_strlen ft_strlen
-
+echo "--------_hello---------"
+./libft ft_strlen
+echo "---------hello---------"
+./libft test_1
+echo "---------hello---------"
+./libft ft_strlen

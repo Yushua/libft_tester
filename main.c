@@ -6,7 +6,7 @@
 /*   By: ybakker <ybakker@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/03 01:34:55 by ybakker       #+#    #+#                 */
-/*   Updated: 2021/11/07 20:56:18 by ybakker       ########   odam.nl         */
+/*   Updated: 2021/11/07 21:11:56 by ybakker       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,12 @@ void    ft_strlen_tester(void)
 void    ft_test_1(void)
 {
     printf("---- f_strlen tester ----\n\n");
+    const char *str = NULL;
+    size_t     i = 0;
+    size_t     y = 0;
+
+    i = strlen(str);
+    y = ft_strlen(str);
 
     printf("len == [%zu] ftlen == [%zu]\n\n", i, y);
 }
@@ -37,14 +43,14 @@ void    ft_test_2(void)
 {
     printf("---- f_strlen tester ----\n\n");
 
-    printf("len == [%zu] ftlen == [%zu]\n\n", i, y);
+    // printf("len == [%zu] ftlen == [%zu]\n\n", i, y);
 }
 
 void    ft_test_3(void)
 {
     printf("---- f_strlen tester ----\n\n");
 
-    printf("len == [%zu] ftlen == [%zu]\n\n", i, y);
+    // printf("len == [%zu] ftlen == [%zu]\n\n", i, y);
 }
 
 int     ft_while_loop(int argc, char **argv)
@@ -55,7 +61,7 @@ int     ft_while_loop(int argc, char **argv)
         //setup for each test to see how it works
         if (!strcmp(argv[i], "ft_strlen"))
             ft_strlen_tester();
-        else if (!strcmp(argv[i], "ft_strlen"))
+        else if (!strcmp(argv[i], "test_1"))
             ft_test_1();
         else if (!strcmp(argv[i], "ft_strlen"))
             ft_test_2();
@@ -77,7 +83,7 @@ int     main(int argc, char **argv)
     {
         i = 1;
     }
-    else if (argc == 2)
+    else if (argc == 1)
     {
         i = 1;
     }
@@ -89,13 +95,12 @@ int     main(int argc, char **argv)
         return (0);
     }
     //use this to check for one case or for all cases
-    if (i == 1 || strcmp(argv[1], "ft_strlen"))
+    if (i == 1)
+    {
         ft_strlen_tester();
-    else if (i == 1 || strcmp(argv[1], "ft_strlen"))
         ft_test_1();
-    else if (i == 1 || strcmp(argv[1], "ft_strlen"))
         ft_test_2();
-    else if (i == 1 || strcmp(argv[1], "ft_strlen"))
         ft_test_3();
+    }
     return (0);
 }
