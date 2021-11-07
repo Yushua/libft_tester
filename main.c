@@ -6,11 +6,12 @@
 /*   By: ybakker <ybakker@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/03 01:34:55 by ybakker       #+#    #+#                 */
-/*   Updated: 2021/11/07 20:35:45 by ybakker       ########   odam.nl         */
+/*   Updated: 2021/11/07 20:50:47 by ybakker       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include   "libft.h"
+# include <string.h>
 
 void    ft_strlen_tester(void)
 {
@@ -30,10 +31,10 @@ int     ft_while_loop(int argc, char **argv)
     int i = 1;
     while (i < argc)
     {
-        if (strcmp(argv[i], "ft_strlen"))
+        if (!strcmp(argv[i], "ft_strlen"))
             ft_strlen_tester();
         else
-            printf("argument invalid [%s]\n", argv[i]);
+            printf("argument invalid [%s] i == [%i]\n", argv[i], strcmp(argv[i], "ft_strlen"));
         i++;
     }
     return (0);
