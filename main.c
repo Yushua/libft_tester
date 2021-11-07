@@ -6,7 +6,7 @@
 /*   By: ybakker <ybakker@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/03 01:34:55 by ybakker       #+#    #+#                 */
-/*   Updated: 2021/11/07 20:55:15 by ybakker       ########   odam.nl         */
+/*   Updated: 2021/11/07 20:56:18 by ybakker       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,7 @@ int     ft_while_loop(int argc, char **argv)
     int i = 1;
     while (i < argc)
     {
+        //setup for each test to see how it works
         if (!strcmp(argv[i], "ft_strlen"))
             ft_strlen_tester();
         else if (!strcmp(argv[i], "ft_strlen"))
